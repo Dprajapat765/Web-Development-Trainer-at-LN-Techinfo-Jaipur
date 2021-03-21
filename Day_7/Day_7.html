@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Properties</title>
+	<style type="text/css">
+		.header{
+			background-image: url("3.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 100%;
+			height: 80px;
+		}
+		.title{
+			float: left;
+		}
+		.title h2{
+			font-size: 48px;
+			position: relative;
+			top: -20px;
+			color: #fff;
+			font-weight: 700;
+			left: 80px;
+			font-family: serif;
+		}
+		.login_form{
+			float: right;
+		}
+		input{
+			position: relative;
+			top: 30px;
+			border-radius: 5px;
+			border:1px solid #86869c;
+			margin-right: 10px;
+		}
+		input[type='submit']{
+		    background-color: #0000ff;
+			color: #fff;
+			font-size: 15px;
+			border: 1px solid #86869c;
+		}
+		.forget{
+			color: #fff;
+			position: relative;
+			top: 55px;
+			right: 16em;
+		}
+	</style>
+</head>
+<body style="background-color: #f0f2f5;">
+	<div class="header">
+		<div class="title">
+			<h2>facebook</h2>
+		</div>
+		<form class="login_form"> 
+			<input type="text" name="text" placeholder="email address">
+			<input type="password" name="password" placeholder="password">
+			<input type="submit" name="submit" value="Log In">
+			<a href="#" class="forget">Forget Password</a>
+		</form>
+	</div>
+</body>
+</html>

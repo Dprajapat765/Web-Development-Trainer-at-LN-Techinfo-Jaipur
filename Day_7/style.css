@@ -1,0 +1,40 @@
+body{
+	background-image: url("img/bg1.jpg");
+	background-size: cover;
+	background-position: center center;
+}
+
+.form{
+	width: 240px;
+    border: 1px solid #000;
+    height: 100%;
+    padding: 74px 79px 280px 22px;
+    margin-left: 459px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #000;
+
+}
+input{
+	height: 40px;
+	margin-bottom: 20px;
+	border-radius: 7px;
+	border:1px solid #d3d3d3;
+}
+input[type="text"]{
+	width: 280px;
+	font-size: 16px;
+}
+input[type="submit"]{
+	width: 100px;
+    background-color: #12771a;
+    color: #fff;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+.form h2{
+	font-size: 28px;
+    text-align: center;
+    text-decoration: underline;
+    color: #24791f;
+}
