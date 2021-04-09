@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+</head>
+<body>
+<h1>Today's Topics to be covered</h1>
+<pre>
+JavaScript 
+	Introduction - Programming Lang. 
+	Outputs - console, alert, write , innerHTML
+	Variables, Statements, Keywords and Data Types
+	Operators - Arithmetic, Assignment, Comparision
+	Functions - define and return
+</pre>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<button onclick="my_function()">click</button>
+
+<script type="text/javascript">
+	//Outputs of JS
+	console.log("15");
+	document.write("15");
+	document.getElementById("demo").innerHTML = "hello";
+	/*alert("hello");*/
+
+	// Decalring Varibales
+	/*Data Types
+		String - "hello" 'hello'
+		Int - 5
+		Object = {"Key":5, "Key2":10}
+	*/
+	//Arithmetic Operators
+
+	var x = 5;  //value should be equal
+	var y = 6;  
+	var z = {"Key":5, "Key2":10}
+	// Comparision
+	// if x && y == 5 - false
+	// if x || y == 5 - true
+	document.getElementById("demo1").innerHTML = x + y;
+	document.getElementById("demo2").innerHTML = (typeof(y));
+	document.getElementById("demo").innerHTML = (typeof(z));
+
+	// define function
+	
+	function my_function(){
+		// calling a function
+		var s = Date();
+		return document.getElementById("demo").innerHTML = s;
+	}
+</script>
+</body>
+</html>
