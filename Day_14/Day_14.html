@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JavaScript</title>
+	</head>
+
+	<body>
+	<pre>
+		JS if else elseif
+		JS Alert - Alert, confirm, prompt
+	</pre>
+	<h3 id="demo"></h3>
+	<p id="confirm"></p>
+	<script type="text/javascript">
+		//alert("hello");//user presence
+		/*var a = confirm("Hello everyone!");// user verify 
+		if (a==true) {
+			document.getElementById("confirm").innerHTML = "OK";
+		}
+		else {
+			document.getElementById("confirm").innerHTML = "Cancle";
+		}*/
+
+		var input1= prompt("Enter your Name: ");// input		
+		if (input1==null || input1=="") {
+			prompt("Please Enter your name: ");
+		}
+		else{
+			document.getElementById("confirm").innerHTML = "Hello Mr. " + input1 + " Welcome to India!";
+		}
+		
+		var a = 4;
+		if (a > 5) {
+			document.getElementById('demo').innerHTML = "More than 5";//false
+		}
+		else if (a==5) {
+			document.getElementById('demo').innerHTML = "Equal to 5";//true
+		}
+		else{
+			document.getElementById('demo').innerHTML = "Less than 5";	
+		}
+	</script>
+
+	</body>
+</html>
