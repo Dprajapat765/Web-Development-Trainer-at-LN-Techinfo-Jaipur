@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+</head>
+<body>
+<pre>
+	For Loop
+	While Loop
+	Do While Loop
+	Break & Continue
+	Form Validation
+		types
+		1. Server side
+		2. Client side
+</pre>
+
+<p id="demo"></p>
+
+<form name="testform" onsubmit="return fname()">
+	<input type="text" placeholder="name" name="textname">
+	<input type="submit" value="submit">
+</form>
+
+<script type="text/javascript">
+	function fname() {
+		var f = document.forms['testform']['textname'].value;
+		if (f == "") {
+			alert("Fill the name please");
+			return false;
+		}
+	}
+	// Looping
+	var user = "";	
+	for (var i = 0; i <= 10; i++) {
+		if (i==5) {
+			continue;
+		}
+		user += "Number is " + i + "<br>";
+	}
+	/*var i = 0;
+	while(i<10){
+		user += "Number is " + i + "<br>";
+		i++;
+	}*/
+	document.getElementById('demo').innerHTML = user;
+
+	/*do {
+		user += "Number is " + i + "<br>";
+		i++;
+	}
+	while(i < 20);*/
+
+	
+</script>
+
+
+</body>
+</html>
